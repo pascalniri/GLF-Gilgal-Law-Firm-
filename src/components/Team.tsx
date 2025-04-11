@@ -54,7 +54,7 @@ const Team = () => {
   return (
     <div
     id="team"
-      className="font-outfit flex flex-col justify-center items-center lg:min-h-screen bg-cover bg-center px-[5%] lg:py-0 py-[15%] mx-auto"
+      className="scroll-mt-20 font-outfit flex flex-col justify-center items-center lg:min-h-screen bg-cover bg-center px-[5%] lg:py-0 py-[15%] mx-auto"
       style={{ backgroundImage: "url('/bg.svg')" }}
     >
       <div className="bg-[#78EB54] bg-opacity-10 text-[#78EB54] border border-[#78EB54] rounded-full px-6 py-2 mb-5">

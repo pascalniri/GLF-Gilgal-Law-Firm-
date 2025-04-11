@@ -7,7 +7,7 @@ const Areas = () => {
     { title: "Land Law" },
   ];
   return (
-    <div className="font-outfit flex flex-col justify-center items-center w-full h-full py-[20rem] px-5">
+    <div className="scroll-mt-20 font-outfit flex flex-col justify-center items-center w-full h-full py-[20rem] px-5">
       <div
         style={{ backgroundImage: "url('/pattern.svg')" }}
         className="bg-cover bg-center shadow-lg p-20 rounded-xl flex flex-col justify-center items-center"

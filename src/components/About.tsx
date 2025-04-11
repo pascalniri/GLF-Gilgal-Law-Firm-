@@ -2,7 +2,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const About = () => {
   return (
-    <section id="about" className="font-outfit grid grid-cols-1 lg:grid-cols-2 gap-10 px-[5%] py-[100px] bg-cover bg-center bg-no-repeat bg-[url('/aboutBg.svg')]">
+    <section id="about" className="scroll-mt-20 font-outfit grid grid-cols-1 lg:grid-cols-2 gap-10 px-[5%] py-[100px] bg-cover bg-center bg-no-repeat bg-[url('/aboutBg.svg')]">
       <div>
         <img src="/aboutImg.svg" alt="" />
       </div>

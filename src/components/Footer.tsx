@@ -13,10 +13,10 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "HOME", href: "/" },
-    { name: "ABOUT US", href: "/about" },
-    { name: "OUR SERVICES", href: "/services" },
-    { name: "OUR TEAM", href: "/team" },
+    { name: "HOME", href: "#hero" },
+    { name: "ABOUT US", href: "#about" },
+    { name: "OUR SERVICES", href: "#services" },
+    { name: "OUR TEAM", href: "#team" },
   ];
 
   const locationLinks = [
