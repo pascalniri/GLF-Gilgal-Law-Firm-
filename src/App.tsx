@@ -1,16 +1,11 @@
-
 import './App.css'
-import About from './components/About'
-import Hero from './components/Hero'
-import WhyUs from './components/WhyUs'
+import LandingPage from './pages/LandingPage'
 
 function App() {
 
   return (
     <>
-    <Hero />
-    <About />
-    <WhyUs />
+   <LandingPage />
     </>
   )
 }

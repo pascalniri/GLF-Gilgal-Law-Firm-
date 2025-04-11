@@ -3,6 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const Hero = () => {
   return (
     <div
+    id="hero"
       className="font-outfit flex flex-col lg:min-h-screen pb-[100px] lg:pb-0 bg-cover bg-center px-[5%] mx-auto"
       style={{ backgroundImage: "url('/heroBg.svg')" }}
     >
