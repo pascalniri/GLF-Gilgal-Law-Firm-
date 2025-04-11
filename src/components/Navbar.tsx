@@ -22,7 +22,7 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between">
-        <h1 className="text-xl font-bold">LOGO</h1>
+        <img src="/logo.svg" alt="logo" />
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-10 text-[16px]">

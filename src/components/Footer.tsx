@@ -55,8 +55,8 @@ const Footer = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[5rem] text-white  pt-20">
         <div className="flex flex-col">
-          <h1>LOGO</h1>
-          <h2>Gilgal Law firm (GLF)</h2>
+        <img src="/logo.svg" alt="logo" className="w-[120px]" />
+          <h2 className="mt-10 font-medium text-[20px]">Gilgal Law firm (GLF)</h2>
           <p>
             Professional and dynamic business law firm based in Rwanda with the
             Head office in Kigali. The major areas of practice of our lawyers
