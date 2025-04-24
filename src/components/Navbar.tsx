@@ -22,7 +22,9 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between">
-        <img src="/logo.svg" alt="logo" className="w-[120px]" />
+        <a href="#hero">
+        <img src="/GLF_logo2.svg" alt="logo" className="w-[120px]" />
+        </a>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-10 text-[16px]">
@@ -34,10 +36,10 @@ const Navbar = () => {
         </ul>
 
         {/* CTA Button - Hidden on small screens */}
-        <button className="hidden md:flex items-center gap-2 bg-[#78EB54] text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white transition">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gilgallaw.com" target="_blank" className="hidden md:flex items-center gap-2 bg-[#78EB54] text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white transition">
           <p>Get Intouch</p>
           <IoMdChatbubbles size={22} />
-        </button>
+        </a>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">

@@ -24,10 +24,10 @@ const About = () => {
         In addition, the law firm provides general commercial legal services in corporate affairs (Business Incorporation), legal drafting, contracts, Land Matters, and Arbitration.
         </p>
 
-        <button className="flex items-center justify-center mt-10 gap-2 bg-[#78EB54] text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white transition duration-300 ease-in-out">
+        <a href="#team" className="flex items-center justify-center mt-10 gap-2 bg-[#78EB54] text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white transition duration-300 ease-in-out">
           <p>Get Assistance</p>
           <GoArrowUpRight size={24} />
-        </button>
+        </a>
       </div>
     </section>
   );

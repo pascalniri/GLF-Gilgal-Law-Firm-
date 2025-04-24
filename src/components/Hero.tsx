@@ -17,13 +17,13 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-wrap items-center justify-center mt-[50px] gap-5">
-          <button className="flex items-center justify-center gap-2 bg-[#78EB54] text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white transition duration-300 ease-in-out">
+          <a href="#team" className="flex items-center justify-center gap-2 bg-[#78EB54] text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white transition duration-300 ease-in-out">
             <p>Get Legal Assistance</p>
             <GoArrowUpRight size={24} />
-          </button>
-          <button className="bg-white text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white  transition duration-300 ease-in-out">
+          </a>
+          <a href="#services" className="bg-white text-black px-[40px] py-[15px] rounded-full hover:bg-[#147323] hover:text-white  transition duration-300 ease-in-out">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </div>
