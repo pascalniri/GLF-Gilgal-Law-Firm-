@@ -8,30 +8,30 @@ const Team = () => {
     {
       name: "RUZINDANA Robert Clement",
       role: "The Managing Partner of GLF",
-      image: "/male.svg",
+      image: "/RUZINDANA Robert Clement.jpg",
       description1:
         "Mr. RUZINDANA Robert Clément is currently the Managing Partner of Gilgal Law Firm. Before establishing GLF, Mr. RUZINDANA Robert Clement has been working with the Rwanda Private Sector Federation for over nine years as the Head of Legal Affairs Department as well as the Director of Liberal Professions Chamber. Mr. RUZINDANA Robert Clément holds a degree in law (LL.B) and Masters in Business Law (Msc). ",
       description2:
         "He is a Member of the Rwanda Bar Association (RBA) and East African Law society. He is a native speaker of Kinyarwanda, has excellent command of French and a working knowledge of English.",
       socialMedia: {
-        email: "https://www.facebook.com/ruzindana.robert",
-        twitter: "https://twitter.com/ruzindana_robert",
-        linkedin:
-          "https://www.linkedin.com/in/ruzindana-robert-clement-3b0a4a1b2/",
+        email: "https://mail.google.com/mail/?view=cm&fs=1&to=crruzindana@yahoo.fr",
+        // twitter: "https://twitter.com/ruzindana_robert",
+        // linkedin:
+        //   "https://www.linkedin.com/in/ruzindana-robert-clement-3b0a4a1b2/",
       },
     },
     {
       name: "Mrs. MUKESHIMANA Rose",
       role: "Associate",
-      image: "/female.svg",
+      image: "/Mrs. MUKESHIMANA Rose.jpg",
       description1:
         "Mrs. MUKESHIMANA Rose joined GLF in 2014 with six years’ experience in Intellectual Property Registration. She is responsible for the IP Department. She has been involved in legal activities for various legal commissions and has participated in many IP Trainings such as Making Better Use of IP for Business Competitiveness and Development in Africa: Protection and Promotion of Patents, Utility Models, Industrial Designs and Trademarks in Africa and Plant Variety Protection and Implementation of the Nagoya Protocol.",
       description2:
         "Mrs. MUKESHIMANA Rose holds a degree in law (LL.B), and she is a native speaker of Kinyarwanda, has excellent command of French, and a working knowledge of English.",
       socialMedia: {
-        email: "https://www.facebook.com/mukeshimana.rose",
-        twitter: "https://twitter.com/mukeshimana_rose",
-        linkedin: "https://www.linkedin.com/in/mukeshimana-rose-3a4a1b2b/",
+        email: "https://mail.google.com/mail/?view=cm&fs=1&to=rororw@yahoo.fr",
+        // twitter: "https://twitter.com/mukeshimana_rose",
+        // linkedin: "https://www.linkedin.com/in/mukeshimana-rose-3a4a1b2b/",
       },
     },
   ];
@@ -68,7 +68,7 @@ const Team = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-[#147323] w-full h-full bg-opacity-80 p-[20px] rounded-xl"
+            className="bg-[#147323] w-full md:w-[350px] h-full bg-opacity-80 p-[20px] rounded-xl"
           >
             <div className="group relative flex flex-col items-start justify-center h-full text-white overflow-hidden rounded-xl">
               <div className="bg-gradient-to-t from-black via-black/50 to-transparent absolute inset-0 rounded-xl z-20"></div>
@@ -78,7 +78,7 @@ const Team = () => {
                 className="group-hover:scale-105 transition duration-300 ease-in-out rounded-xl object-cover w-full h-[350px]"
               />
               <div className="absolute text-white z-20 bottom-10 left-10">
-                <h1 className="text-[22px]">{member.name}</h1>
+                <h1 className="text-[18px]">{member.name}</h1>
                 <p className="text-[#45A735] font-light">{member.role}</p>
 
                 <button
@@ -126,7 +126,7 @@ const Team = () => {
                 >
                   <AiOutlineMail size={25} />
                 </a>
-                <a
+                {/* <a
                   href={selectedMember.socialMedia.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -141,7 +141,7 @@ const Team = () => {
                   className="text-white border border-white rounded-full p-5 hover:bg-[#78EB54] hover:bg-opacity-20 transition duration-300"
                 >
                   <FaLinkedinIn size={25} />
-                </a>
+                </a> */}
               </div>
             </div>
 
