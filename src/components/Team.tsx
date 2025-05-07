@@ -1,8 +1,8 @@
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
+// import { FaLinkedinIn } from "react-icons/fa6";
 const Team = () => {
   const teamMembers = [
     {
@@ -15,9 +15,8 @@ const Team = () => {
         "He is a Member of the Rwanda Bar Association (RBA) and East African Law society. He is a native speaker of Kinyarwanda, has excellent command of French and a working knowledge of English.",
       socialMedia: {
         email: "https://mail.google.com/mail/?view=cm&fs=1&to=crruzindana@yahoo.fr",
-        // twitter: "https://twitter.com/ruzindana_robert",
-        // linkedin:
-        //   "https://www.linkedin.com/in/ruzindana-robert-clement-3b0a4a1b2/",
+        twitter: "https://twitter.com/ruzindana_robert",
+        linkedin: "https://www.linkedin.com/in/ruzindana-robert-clement-3b0a4a1b2/",
       },
     },
     {
@@ -30,8 +29,8 @@ const Team = () => {
         "Mrs. MUKESHIMANA Rose holds a degree in law (LL.B), and she is a native speaker of Kinyarwanda, has excellent command of French, and a working knowledge of English.",
       socialMedia: {
         email: "https://mail.google.com/mail/?view=cm&fs=1&to=rororw@yahoo.fr",
-        // twitter: "https://twitter.com/mukeshimana_rose",
-        // linkedin: "https://www.linkedin.com/in/mukeshimana-rose-3a4a1b2b/",
+        twitter: "https://twitter.com/mukeshimana_rose",
+        linkedin: "https://www.linkedin.com/in/mukeshimana-rose-3a4a1b2b/",
       },
     },
   ];
