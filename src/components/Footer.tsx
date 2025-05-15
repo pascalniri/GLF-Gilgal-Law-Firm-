@@ -39,9 +39,9 @@ const Footer = () => {
   ];
 
   const socialMediaLinks = [
-    { icon: <ImLinkedin size={20} />, href: "https://www.linkedin.com/" },
-    { icon: <FaXTwitter size={20} />, href: "https://x.com/" },
-    { icon: <RiInstagramFill size={20} />, href: "https://www.instagram.com/" },
+    { icon: <ImLinkedin size={20} />, href: "https://www.linkedin.com/in/gilgal-law-548797364/" },
+    { icon: <FaXTwitter size={20} />, href: "https://x.com/gilgal_law" },
+    { icon: <RiInstagramFill size={20} />, href: "https://www.instagram.com/gilgallaw/" },
   ];
 
   return (
