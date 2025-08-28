@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator for GLF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-preview {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo-preview img {
+            max-width: 200px;
+            height: auto;
+        }
+        .download-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .download-btn:hover {
+            background: #0056b3;
+        }
+        .instructions {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Favicon Generator for Gilgal Law Firm</h1>
+        
+        <div class="logo-preview">
+            <h3>Current Logo Preview:</h3>
+            <img src="public/GLF_logo2.svg" alt="GLF Logo" id="logoPreview">
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Right-click on each favicon size below and "Save As" to your public folder</li>
+                <li>Make sure to save with the exact filename shown</li>
+                <li>After saving all files, restart your development server</li>
+                <li>Clear your browser cache and test the favicon</li>
+            </ol>
+        </div>
+
+        <div class="download-section">
+            <h3>Download Favicon Files:</h3>
+            
+            <h4>Primary Favicon (ICO format):</h4>
+            <a href="#" class="download-btn" onclick="generateFavicon('ico', 32)">Download favicon.ico (32x32)</a>
+            
+            <h4>PNG Favicons:</h4>
+            <a href="#" class="download-btn" onclick="generateFavicon('png', 16)">Download favicon-16x16.png</a>
+            <a href="#" class="download-btn" onclick="generateFavicon('png', 32)">Download favicon-32x32.png</a>
+            
+            <h4>Apple Touch Icon:</h4>
+            <a href="#" class="download-btn" onclick="generateFavicon('png', 180)">Download apple-touch-icon.png</a>
+            
+            <h4>Android Chrome Icons:</h4>
+            <a href="#" class="download-btn" onclick="generateFavicon('png', 192)">Download android-chrome-192x192.png</a>
+            <a href="#" class="download-btn" onclick="generateFavicon('png', 512)">Download android-chrome-512x512.png</a>
+        </div>
+
+        <div class="instructions">
+            <h3>Alternative Solution:</h3>
+            <p>If the above doesn't work, you can also:</p>
+            <ol>
+                <li>Use an online favicon generator like <a href="https://realfavicongenerator.net/" target="_blank">RealFaviconGenerator.net</a></li>
+                <li>Upload your GLF_logo2.svg file</li>
+                <li>Download the generated package and place all files in your public folder</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function generateFavicon(format, size) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = document.getElementById('logoPreview');
+            
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Create a white background
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw the logo
+            ctx.drawImage(img, 0, 0, size, size);
+            
+            // Convert to blob and download
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                
+                if (format === 'ico') {
+                    a.download = 'favicon.ico';
+                } else {
+                    a.download = `favicon-${size}x${size}.png`;
+                }
+                
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, format === 'ico' ? 'image/x-icon' : 'image/png');
+        }
+    </script>
+</body>
+</html>
